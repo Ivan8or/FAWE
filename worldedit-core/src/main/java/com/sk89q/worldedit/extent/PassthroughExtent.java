@@ -22,6 +22,7 @@ import com.sk89q.worldedit.world.block.BlockType;
 
 import java.util.List;
 import java.util.Set;
+import java.util.UUID;
 import javax.annotation.Nullable;
 
 public class PassthroughExtent extends AbstractDelegateExtent {

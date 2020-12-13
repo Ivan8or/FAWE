@@ -505,9 +505,5 @@ public class Regen_v1_15_R2 extends Regenerator<IChunkAccess, ProtoChunk, Chunk,
         @Override
         public void b() {
         }
-
-        @Override
-        public void setChunkRadius(int i) {
-        }
     }
 }
