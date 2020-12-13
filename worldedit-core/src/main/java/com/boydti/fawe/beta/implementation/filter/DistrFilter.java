@@ -40,11 +40,7 @@ public class DistrFilter extends ForkedFilter<DistrFilter> {
 
     @Override
     public final void applyBlock(FilterBlock block) {
-        int ordinal = block.getOrdinal();
-        if (ordinal == 0) {
-            ordinal = 1;
-        }
-        counter[ordinal]++;
+        counter[block.getOrdinal()]++;
     }
 
     public int getTotal(ABlockMask mask) {

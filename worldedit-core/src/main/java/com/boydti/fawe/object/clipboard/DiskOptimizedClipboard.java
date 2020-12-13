@@ -324,7 +324,8 @@ public class DiskOptimizedClipboard extends LinearClipboard implements Closeable
     }
 
     public int getIndex(int x, int y, int z) {
-        return x + y * getArea() + z * getWidth();
+        return x + (ylast == y ? ylasti : (ylasti = (ylast = y) * getArea())) + (zlast == z
+            ? zlasti : (zlasti = (zlast = z) * getWidth()));
     }
 
     @Override
